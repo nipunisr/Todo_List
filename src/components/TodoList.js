@@ -1,9 +1,9 @@
 import React from 'react';
+import { AnimatePresence } from 'framer-motion';
 import TodoItem from './TodoItem';
-
 const TodoList = ({ todos, onDelete, onToggle }) => {
   return (
-    <div>
+    <AnimatePresence>
       {todos.map((todo) => (
         <TodoItem
           key={todo.id}
@@ -12,7 +12,7 @@ const TodoList = ({ todos, onDelete, onToggle }) => {
           onToggle={onToggle}
         />
       ))}
-    </div>
+    </AnimatePresence>
   );
 };
 
