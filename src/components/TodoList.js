@@ -1,6 +1,7 @@
 import React from 'react';
-import { AnimatePresence } from 'framer-motion';
 import TodoItem from './TodoItem';
+import { AnimatePresence } from 'framer-motion';
+
 const TodoList = ({ todos, onDelete, onToggle }) => {
   return (
     <AnimatePresence>

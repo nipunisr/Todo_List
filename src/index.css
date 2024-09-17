@@ -1,8 +1,0 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-/* Custom styles using Tailwind's @apply directive */
-body {
-  @apply font-sans bg-gray-50;
-}

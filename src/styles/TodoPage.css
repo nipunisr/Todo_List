@@ -1,4 +1,30 @@
-.todo-page {
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles for your todo app */
+.todo-item {
+  @apply flex items-center justify-between p-4 border-b border-gray-200;
+}
+
+.todo-item.completed span {
+  @apply text-gray-500 line-through;
+}
+
+.todo-item button {
+  @apply px-3 py-1 text-white transition duration-200 ease-in-out bg-red-500 rounded hover:bg-red-700;
+}
+
+form input {
+  @apply w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500;
+}
+
+form button {
+  @apply px-4 py-2 text-white transition duration-200 ease-in-out bg-blue-500 rounded hover:bg-blue-700;
+}
+
+
+/*.todo-page {
     font-family: Arial, sans-serif;
     max-width: 600px;
     margin: 0 auto;
@@ -39,4 +65,4 @@
   form button {
     padding: 10px;
   }
-  
+  */
